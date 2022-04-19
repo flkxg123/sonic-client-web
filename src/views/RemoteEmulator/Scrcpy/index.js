@@ -38,7 +38,7 @@ class Scrcpy {
   }
   initial(props){
     // 初始化播放器
-    if (!this.jmuxer && this.excuteMode == 'Scrcpy') {
+    if (this.excuteMode == 'Scrcpy') {
       const {
         node, // video dom节点
       } = props;
